@@ -16,7 +16,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
 
         <TextView
             android:text="@string/titulo"
@@ -38,12 +39,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/cmdBoton"
-            android:text="@string/saludar" />
+            android:text="@string/saludar"
+            android:onClick="saludar" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/lblMensaje"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:layout_weight="0.15" />
     </LinearLayout>
 </RelativeLayout>
